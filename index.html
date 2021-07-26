@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Protfolio - Mohit</title>
+  <link rel = "icon" type = "image/png" href="titleTag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff00cc">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"
+ng-app="myPort" ng-controller="myPortController">
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" id="hambtn" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background: #fff;">
+        <span class="icon-bar" style="background: #000;"></span>
+        <span class="icon-bar" style="background: #000;"></span>
+        <span class="icon-bar" style="background: #000;"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Mohit</a>
+      <a id="button" onclick="toggleDarkMode()" style="cursor: pointer;">
+        <i class="fa fa-moon fa-3x" style="color: #fff;" title="Toggle Dark Mode"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" style="font-weight: 600 !important;">ABOUT</a></li>
+        <li><a href="#tech" style="font-weight: 600 !important;">SKILLS</a></li>
+        <li><a href="#portfolio" style="font-weight: 600 !important;">MY WORKS</a></li>
+        <li><a href="#wheather_apod" style="font-weight: 600 !important;">WHEATHER & APOD</a></li>
+        <li><a href="#contact" style="font-weight: 600 !important;">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="my-element-to-clip jumbotron text-center header"> 
+  <h1 style="display: inline-block;">WELCOME</h1>
+  <br>
+  <h2>Just a simple portfolio webpage</h2> 
+</div>
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+        <path
+          d="M 0,2 L0,0 L 1,0 L 1,0.7 C 0.65 0.45, 0.49 1, 0 1 Z"
+        />
+    </clipPath>
+  </defs>
+</svg>
+
+<div id="about" class="container-fluid about-section">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>About Me <i class="fab fa-intercom fa-2x"></i></h1><br>
+      <h4>Hi Visitor, Mohit this side. Here is little about me</h4>
+      <p>
+        A tech enthusiast who is keen to learn new technologies. <br>
+        Location - Delhi <br>
+        HCL Techbee Scholar 2019-2020 <br>       
+         Currently working at HCL Technologies as Junior Developer (2020-Present) <br>
+      Also pursing BSc. in Designing and Computing from Birla Institute of Technology and Science (BITS Pilani) <br><br>
+      Up for any contribution in small projects
+    </p>
+      <br>
+      <!-- <button onclick="location.href='#contact'" class="about_btn">Get in Touch</button> -->
+    </div>
+    <div class="col-sm-4 about_fireicon">
+     <h1> <img src="SERVICE.png" alt="about_img can't load" width="300px;" height="300px;"></h1>
+     
+    </div>
+  </div>
+</div>
+<div id="tech" class="container-fluid text-center tech">
+  <h1 class="text-center">Skills
+  <img src="tech.png" alt="" width="150px;" height="150px;"></h1>
+  <br>
+  <h2>---I work in such programs as---</h2>
+  <br>
+  <div class="row techrow_1">
+    <div class="col-sm-4 sb">
+      <img src="cSharp.png" alt="">
+      <h2>DOTNET (C#)</h2>
+      <p>Advanced</p>
+    </div>
+    <div class="col-sm-4 sb">
+     <img src="C.png" alt="">
+     <h2>C</h2>
+      <p>Intermediate</p>
+    </div>
+    <div class="col-sm-4 sb">
+      <img src="cPlus.png" alt="">
+      <h2>C++</h2>
+      <p>Intermediate</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row techrow_2">
+    <div class="col-sm-4 sb">
+      <img src="jQuery.png" alt="">
+      <h2>jQuery</h2>
+      <p>Advanced</p>
+    </div>
+    <div class="col-sm-4 sb">
+    <img src="angularjs.png" alt="">
+      <h2>Angular JS</h2>
+      <p>Intermediate</p>
+    </div>
+    <div class="col-sm-4 sb">
+      <img src="html.png" alt="" width="129" height="128">  
+      <h2>Html | CSS | JS</h2>
+      <p>Advanced</p>
+    </div>
+    
+  </div>
+</div>
+
+<div id="portfolio" class="container-fluid text-center works sections-card">
+  <h1>My Works 
+  <img src="11_Success-1-removebg-preview.png" alt="" width="150px;" height="150px;"></h1>
+    <h2><span>
+    <a href="https://github.com/mohit-08-tech" title="Visit my github page" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github fa-3x"></i></a>
+  </span></h2>
+  <p>Some Samples of my projects</p> 
+  <div class="row work-card-center">
+    <div class="col-sm-4 work-example-card">  
+        <div class="heading">
+          <img src="tech.png" alt="" width="150px;" height="150px;">
+        </div>
+        <div class="content">
+        <h2>Test Data 2</h2>
+      </div>
+    </div>
+    <div class="col-sm-4 work-example-card">  
+      <div class="heading">
+        <img src="tech.png" alt="" width="150px;" height="150px;">
+      </div>
+      <div class="content">
+        <h2>Test Data 2</h2>
+      </div>
+  </div>
+  <div class="col-sm-4 work-example-card">  
+    <div class="heading">
+      <img src="tech.png" alt="" width="150px;" height="150px;">
+    </div>
+    <div class="content">
+      <h2>Test Data 2</h2>
+    </div>
+</div>    
+  </div>
+  
+  <div class="row text-center work-card-center">
+    <div class="col-sm-4 work-example-card">  
+      <div class="heading">
+        <img src="tech.png" alt="" width="150px;" height="150px;">
+      </div>
+      <div class="content">
+        <h2>Test Data 2</h2>
+      </div>
+  </div>
+  <div class="col-sm-4 work-example-card">  
+    <div class="heading">
+      <img src="tech.png" alt="" width="150px;" height="150px;">
+    </div>
+    <div class="content">
+      <h2>Test Data 2</h2>
+    </div>
+</div>
+<div class="col-sm-4 work-example-card">  
+  <div class="heading">
+    <img src="tech.png" alt="" width="150px;" height="150px;">
+  </div>
+   <div class="content">
+        <h2>Test Data 2</h2>
+      </div>
+</div>
+  </div>
+  <h4>Check out more at my <a href="https://github.com/mohit-08-tech" title="Visit my github page" target="_blank" rel="noopener noreferrer">
+    Github <i class="fab fa-github fa-2x"></i></a>  
+  </h4>
+</div>
+
+<div id="wheather_apod" class="container-fluid apod">
+  <div class="text-center">
+    <h1>Wheather</h1>
+    <img src="wheatherIcon.png" alt="" width="200px;" height="200px;" style="margin-top: -50px;">
+    <p><strong>Simple API call to display wheather</strong></p>
+  </div>
+  <div class="wheater-row">
+    <!-- <div class="col-sm-4 col-xs-12"> -->
+      <div class="wheater-card">
+        <div class="profile">
+          <h1>Parliament, Delhi</h1>
+        </div>
+        <div class="about">
+          <h2>Temperature</h2>
+          <h2><strong>{{cityData1.main.temp}} &deg; C</strong></h2>
+          <p><strong>Wind: {{cityData1.wind.speed}} m/s</strong></p>
+          <p><strong>Description: {{cityData1.weather[0].main}} </strong></p> 
+          <p><strong>Pressure: {{cityData1.main.pressure}} hPa</strong></p>      
+          <p><strong>Humidity: {{cityData1.main.humidity}} %</strong></p>      
+          <p><strong>Visibility: {{cityData1.visibility}}</strong></p>   
+        </div>
+      </div>
+    <!-- </div>      -->
+    <!-- <div class="col-sm-4 col-xs-12"> -->
+      <div class="wheater-card">
+        <div class="profile">
+          <h1>Borivali, Mumbai</h1>
+        </div>
+        <div class="about">
+          <h2>Temperature</h2>
+          <h4><strong>{{cityData2.main.temp}} &deg; C</strong></h4>
+          <p><strong>Wind: {{cityData2.wind.speed}} m/s</strong></p>
+          <p><strong>Description: {{cityData2.weather[0].main}} </strong></p> 
+          <p><strong>Pressure: {{cityData2.main.pressure}} hPa</strong></p>      
+          <p><strong>Humidity: {{cityData2.main.humidity}} %</strong></p>      
+          <p><strong>Visibility: {{cityData2.visibility}}</strong></p>      
+        </div>
+      </div>
+      <!-- </div>  -->
+      <!-- <div class="col-sm-4 col-xs-12"> -->
+        <div class="wheater-card">
+          <div class="profile">
+            <h1>Gadag, Karnataka</h1>
+          </div>
+          <div class="about">
+            <h2>Temperature</h2>
+            <h4><strong>{{cityData3.main.temp}} &deg; C</strong></h4>
+            <p><strong>Wind: {{cityData3.wind.speed}} m/s</strong></p>
+            <p><strong>Description: {{cityData3.weather[0].main}} </strong></p> 
+            <p><strong>Pressure: {{cityData3.main.pressure}} hPa</strong></p>      
+            <p><strong>Humidity: {{cityData3.main.humidity}} %</strong></p>      
+            <p><strong>Visibility: {{cityData3.visibility}}</strong></p>  
+          </div>
+        </div>
+      <!-- </div>          -->
+    </div>       
+  <hr>
+  <div class="text-center apod-two">
+    <h1>Astronomy Picture of the Day (APOD)</h1>
+    <h2><strong>Title - {{NasaData.title}}</strong></h2>
+    <p>{{NasaData.explanation}}</h4>
+    <p><strong>Date -  {{NasaData.date}} &copy; {{NasaData.copyright}}</strong></p>
+    <br><br>
+    <a href="{{NasaData.hdurl}}"  target="_blank" rel="noopener noreferrer" class="apod-btn text-center" style="display: inline;">Click to see APOD image</a>
+  </div>
+</div>
+</div>
+<div id="contact" class="container-fluid contact sections-card">
+  <h1 class="text-center">CONTACT
+    <img src="one.png" alt="can't load image" width="110px;" height="110px;"/></h1>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Delhi, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+91 9990437798">+91 9990437798</a> </p>
+      <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:mk3798432@gmail.com">mk082487200@gmail.com</a> </p>
+      <p>Scan this QR Code to connect on WhatsApp
+        <img src="WhatsappContact.jpeg" alt="WhatsApp Contact" width="250px;" height="210px;" style="border-radius: 20px;">
+      </p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autocomplete="off">
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required autocomplete="off">
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" style=" resize: none;"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="contact__button pull-right" type="submit" onclick="swal('Oops!! This function is not available yet!');">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="Scroll To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <h4>Connect with me on </h4>
+  <div class="scr">
+  <a href="https://instagram.com" title="Instrgram" class="social-icons" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram fa-3x"></i>
+  </a>
+  <a href="https://github.com/mohit-08-tech" title="Github" class="social-icons"  target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github fa-3x"></i>
+  </a> 
+  <a href="https://twitter.com/mohitkumar078" title="Twitter" class="social-icons"  target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-twitter fa-3x"></i>
+  </a> 
+  <a href="https://www.linkedin.com/in/mohit-kumar-37b288178/" title="Linkedin" class="social-icons"  target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin-in fa-3x"></i>
+  </a> 
+</div>
+<div style="margin-top:20px;margin-bottom:0;display:inline-block;">
+  <p>&copy; Created by Mohit</p>
+</div>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+<script src="file.js"></script>
+</html>
