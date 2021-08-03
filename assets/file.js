@@ -1,19 +1,15 @@
 jQuery(document).ready(function() {
-
   var mouseX = 0, mouseY = 0;
   var xp = 0, yp = 0;
-   
   $(document).mousemove(function(e){
-    mouseX = e.pageX -7;
-    mouseY = e.pageY -7; 
+    mouseX = e.pageX -10;
+    mouseY = e.pageY -13; 
   });
-    
   setInterval(function(){
     xp += ((mouseX - xp)/6);
     yp += ((mouseY - yp)/6);
     $("#circle").css({left: xp +'px', top: yp +'px'});
   }, 20);
-
 });
 
 const btnriple = document.querySelector(".btnriple");
@@ -29,6 +25,13 @@ btnriple2.onmousemove = function (e) {
   var y = e.pageY - btnriple2.offsetTop;
   btnriple2.style.setProperty("--x", x + "px");
   btnriple2.style.setProperty("--y", y + "px");
+};
+const btnriple3 = document.querySelector(".btnriple3");
+btnriple3.onmousemove = function (e) {
+  var x = e.pageX - btnriple3.offsetLeft;
+  var y = e.pageY - btnriple3.offsetTop;
+  btnriple3.style.setProperty("--x", x + "px");
+  btnriple3.style.setProperty("--y", y + "px");
 };
 
 
@@ -52,7 +55,7 @@ app.controller("myPortController", function ($scope, $http) {
       },
       // Error
       function (response) {
-        alert("Delhi weather API failed to load. Please try again later.");
+       // alert("Delhi weather API failed to load. Please try again later.");
       }
     );
     $http.get(url2).then(
@@ -62,7 +65,7 @@ app.controller("myPortController", function ($scope, $http) {
       },
       // Error
       function (response) {
-        alert("Mumbai weather API failed to load. Please try again later.");
+        //alert("Mumbai weather API failed to load. Please try again later.");
       }
     );
     $http.get(url3).then(
@@ -72,7 +75,7 @@ app.controller("myPortController", function ($scope, $http) {
       },
       // Error
       function (response) {
-        alert("Karnataka weather API failed to load. Please try again later.");
+        //alert("Karnataka weather API failed to load. Please try again later.");
       }
     );
   };
@@ -91,9 +94,10 @@ app.controller("myPortController", function ($scope, $http) {
       // Error
       function (response) {
         console.log(response);
-        alert("Nasa Api failed!..");
+       // alert("Nasa Api failed!..");
       }
     );
   };
   $scope.Nasa();
 });
+
